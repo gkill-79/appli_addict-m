@@ -34,7 +34,7 @@
   button {
     padding: 10px;
     font-size: 14px;
-    background-color: #2f8be6;
+    background-color: #c28618;
     color: white;
     border: none;
     border-radius: 5px;
@@ -43,7 +43,7 @@
   }
   
   button:hover {
-    background-color: #4a9ff5;
+    background-color: #20da58;
   }
   
   .error-message {

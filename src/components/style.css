@@ -23,7 +23,7 @@ time, mark, audio, video {
 
 /* Add some basic styling for your components */
 .header {
-  background-color: #f1f1f1;
+  background-color: #dd2828;
   padding: 20px;
   text-align: center;
 }
@@ -33,7 +33,7 @@ time, mark, audio, video {
 }
 
 .footer {
-  background-color: #f1f1f1;
+  background-color: #e46767;
   padding: 20px;
   text-align: center;
 }

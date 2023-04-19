@@ -17,8 +17,8 @@ body {
 }
 
 header {
-  background: #333;
-  color: #ffffff;
+  background: #a13412;
+  color: #579989;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -35,14 +35,14 @@ nav {
 }
 
 nav a {
-  color: #ffffff;
+  color: #c5953a;
   text-decoration: none;
   padding: 0 1rem;
   font-size: 1.2rem;
 }
 
 nav a:hover {
-  color: #555;
+  color: #5dbcda;
 }
 
 
