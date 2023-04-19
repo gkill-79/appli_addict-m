@@ -1,0 +1,79 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, <%= user.username %>!</h1>
+    <h2>Daily Advice</h2>
+    <p>Here is an advice for you today: Stay positive and keep learning!</p>
+    
+    <h2>Daily Counter</h2>
+    <p>Today's count: <span id="dailyCounter">0</span></p>
+    <button onclick="incrementCounter()">Increment</button>
+
+    <script>
+        const dailyCounterKey = 'dailyCounter';
+        const currentDateKey = 'currentDate';
+
+        const today = new Date().toLocaleDateString();
+        const storedDate = localStorage.getItem(currentDateKey);
+
+        let counter = 0;
+
+        if (storedDate === today) {
+            counter = parseInt(localStorage.getItem(dailyCounterKey)) || 0;
+        } else {
+            localStorage.setItem(currentDateKey, today);
+        }
+
+        const dailyCounterElement = document.getElementById("dailyCounter");
+        dailyCounterElement.textContent = counter;
+
+        function incrementCounter() {
+            counter++;
+            dailyCounterElement.textContent = counter;
+            localStorage.setItem(dailyCounterKey, counter);
+        }
+    </script>
+
+    <a href="/logout">Logout</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
